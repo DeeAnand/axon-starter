@@ -4,9 +4,13 @@ import org.axonframework.modelling.command.TargetAggregateIdentifier;
 
 public class BaseCommand<T> {
 	@TargetAggregateIdentifier
-	public final T id;
+	public T id;
 
 	public BaseCommand(T id) {
 		this.id = id;
+	}
+	
+	public BaseCommand() {
+		// TODO Auto-generated constructor stub
 	}
 }
